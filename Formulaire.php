@@ -5,46 +5,39 @@
         <meta charset='utf-8'>
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-     </head>
-     <body>
-         <div class="container">
-             <h1>Formulaires</h1>
-             <form>
-               <fieldset>
-                 <legend>Exemple de formulaire Bootstrap</legend>
-                 
-                 <div class="form-group">
-                   <label for="nom">Entrez votre nom</label>
-                   <input type="text" class="form-control" id="nom" placeholder="Pierre GIRAUD">
-                 </div>
-                 
-                 <div class="form-group">
-                   <label for="email">Entrez votre mail</label>
-                   <input type="email" class="form-control" id="email" placeholder="pierre.giraud@edhec.com">
-                 </div>
-                 
-                 <div class="form-group">
-                   <label for="selection">Une liste select</label>
-                   <select id="selection" class="form-control">
-                     <option value="">Liste de choix...</option>
-                     <optgroup label="Groupe d'options 1">
-                       <option value="">Option 1</option>
-                       <option value="">Option 2</option>
-                       <option value="">Option 3</option>
-                     </optgroup>
-                     <optgroup label="Groupe d'options 2">
-                       <option value="">Option 4</option>
-                       <option value="">Option 5</option>
-                     </optgroup>
-                   </select>
-                 </div>
-                 <div class="form-group">
-                   <label for="bio">Biographie</label>
-                   <textarea class="form-control" id="bio" rows="3"></textarea>
-                 </div>
-               </fieldset>
-             </form>
-         </div>
+        <label for="validationDefaultUsername">nom</label>
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="inputGroupPrepend2">@</span>
+        </div>
+        <input type="text" class="form-control" id="validationDefaultUsername" placeholder="Username" aria-describedby="inputGroupPrepend2" required>
+      </div>
+    </div>
+  </div>
+  <div class="form-row">
+    <div class="col-md-6 mb-3">
+      <label for="validationDefault03">prenom</label>
+      <input type="text" class="form-control" id="validationDefault03" placeholder="City" required>
+    </div>
+    <div class="col-md-3 mb-3">
+      <label for="validationDefault04">email</label>
+      <input type="text" class="form-control" id="validationDefault04" placeholder="State" required>
+    </div>
+    <div class="col-md-3 mb-3">
+      <label for="validationDefault05"></label>
+      <input type="text" class="form-control" id="validationDefault05" placeholder="contact" required>
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+      <label class="form-check-label" for="invalidCheck2">
+        Agree to terms and conditions
+      </label>
+    </div>
+  </div>
+  <button class="btn btn-primary" type="submit">Submit form</button>
+</form>
     </body>
 </html>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
